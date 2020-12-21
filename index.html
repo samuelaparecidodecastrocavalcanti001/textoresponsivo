@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="tuut.css">
+    <title>Form</title>
+    <style>
+      
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2c3e50;
+}
+
+.div-principal {
+    background: linear-gradient(180deg, rgb(125, 13, 189), rgb(63, 0, 107));
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.titulo_div-principal {
+    color: #2c3e50;
+    padding: 10px;
+    /* background-color: red; */
+    font-family: 'Noto Sans JP';
+}
+
+.paragrafo_div-principal {
+    color: #2c3e50;
+    /* background-color: rgb(30, 255, 0); */
+    padding: 10px;
+    font-family: 'Ubuntu Mono';
+}
+
+/* Media query */
+
+@media screen and (max-width: 399px) {
+    .div-principal {
+        max-width: 250px;
+    }
+
+    .paragrafo_div-principal {
+        font-size: 20px;
+    }
+
+    .paragrafo-grande_div-principal {
+        letter-spacing: 1px;
+        font-family: 'Ubuntu Mono';
+        padding: 20px;
+        line-height: 20px;
+        color: #0e0029;
+    }
+
+    footer {
+        background: linear-gradient(135deg, #481e6b, rgb(101, 2, 135));
+        max-width: 190px;
+        margin: 10px auto;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .paragrafo_footer {
+        font-family: 'DM Sans';
+        color: #232cae;
+        padding: 10px;
+    }
+
+    .link_footer {
+        color: #9202da;
+        text-decoration: none;
+        transition: .3s;
+        font-family: 'DM Sans';
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .link_footer:hover {
+        color: #850ee6;
+    }
+
+    .link_footer:active {
+        color: #e2a8ff;
+    }
+    
+}
+
+@media screen and (min-width: 400px) {
+    .titulo_div-principal {
+        font-size: 30px;
+    }
+
+    .div-principal {
+        max-width: 360px;
+    }
+
+    .paragrafo_div-principal {
+        font-size: 25px;
+    }
+
+    .paragrafo-grande_div-principal {
+        letter-spacing: 1px;
+        font-family: 'Ubuntu Mono';
+        padding: 20px;
+        line-height: 20px;
+        color: #0e0029;
+    }
+
+    footer {
+        background: linear-gradient(135deg, #481e6b, rgb(101, 2, 135));
+        max-width: 200px;
+        margin: 10px auto;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .paragrafo_footer {
+        font-family: 'DM Sans';
+        color: #232cae;
+        padding: 10px;
+    }
+
+    .link_footer {
+        color: #9202da;
+        text-decoration: none;
+        transition: .3s;
+        font-family: 'DM Sans';
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .link_footer:hover {
+        color: #850ee6;
+    }
+
+    .link_footer:active {
+        color: #e2a8ff;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .div-principal {
+        /* background: red; */
+        max-width: 470px;
+    }
+
+    .titulo_div-principal {
+        font-size: 40px;
+    }
+
+    .paragrafo_div-principal {
+        font-size: 30px;
+    }
+
+    .paragrafo-grande_div-principal {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    footer {
+        background: linear-gradient(135deg, #481e6b, rgb(101, 2, 135));
+        max-width: 340px;
+        margin: 10px auto;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .paragrafo_footer {
+        font-family: 'DM Sans';
+        color: #232cae;
+        padding: 40px;
+    }
+
+    .link_footer {
+        color: #9202da;
+        text-decoration: none;
+        transition: .3s;
+        font-family: 'DM Sans';
+        padding: 10px;
+    }
+
+    .link_footer:hover {
+        color: #850ee6;
+    }
+
+    .link_footer:active {
+        color: #e2a8ff;
+    }
+}
+
+    @media screen and (min-width: 600px) {
+        .div-principal {
+        max-width: 570px;
+    }
+
+    .titulo_div-principal {
+        font-size: 55px;
+    }
+
+    .paragrafo_div-principal {
+        font-size: 40px;
+    }
+
+    .paragrafo-grande_div-principal {
+        line-height: 35px;
+        padding: 30px;
+    }
+
+    footer {
+        background: linear-gradient(135deg, #481e6b, rgb(101, 2, 135));
+        max-width: 500px;
+        margin: 10px auto;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .paragrafo_footer {
+        font-family: 'DM Sans';
+        color: #232cae;
+        padding: 40px;
+    }
+
+    .link_footer {
+        color: #9202da;
+        text-decoration: none;
+        transition: .3s;
+        font-family: 'DM Sans';
+        padding: 10px;
+    }
+
+    .link_footer:hover {
+        color: #850ee6;
+    }
+
+    .link_footer:active {
+        color: #e2a8ff;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .div-principal  {
+        max-width: 80%;
+    }
+
+    footer {
+        background: linear-gradient(135deg, #481e6b, rgb(101, 2, 135));
+        max-width: 500px;
+        margin: 10px auto;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .paragrafo_footer {
+        font-family: 'DM Sans';
+        color: #232cae;
+        padding: 20px;
+    }
+
+    .link_footer {
+        color: #9202da;
+        text-decoration: none;
+        transition: .3s;
+        font-family: 'DM Sans';
+        padding: 10px;
+    }
+
+    .link_footer:hover {
+        color: #850ee6;
+    }
+
+    .link_footer:active {
+        color: #e2a8ff;
+    }
+}
+
+::selection {
+    background-color: #241348;
+    color: #484ea3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="div-principal">
+        <h1 class="titulo_div-principal">Titúlo Responsivo</h1>
+
+        
+        <p class="paragrafo_div-principal">Parágrafo Responsivo</p>
+
+        <p class="paragrafo-grande_div-principal"><strong>Lorem Ipsum</strong> é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+
+    </div>
+
+    <footer>
+        <p class="paragrafo_footer">Um teste de</p> <a class="link_footer" target="_blank" href="https://www.facebook.com/samuelaparecido.decastrocavalcanti.7">Samuel Aparecido De Castro Cavalcanti</a>
+    </footer>
+</body>
+</html>
